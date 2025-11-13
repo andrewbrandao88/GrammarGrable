@@ -1,0 +1,168 @@
+body {
+    background-color: #FAEBD7;
+}
+
+h1, h2, h3{
+  text-align: center;
+  padding: 20px;
+}
+
+/* For the download button */
+.custom-btn{
+  background-color: #B8860B;
+  color: white;
+  font-size: 30px;
+  border: none;
+  transition: background-color 0.2s ease; /* smooth fade */
+}
+
+.custom-btn:hover{
+  background-color: #ffde59; /* lighter gold on hover */
+  color: white !important;
+}
+/* End of download button*/
+
+/* start of navigation bar*/
+.Main-NavBar {
+  list-style: none;            /* remove bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex;               /* arrange items in a row */
+  justify-content: center;     /* center items horizontally */
+  align-items: center;
+  background-color: #B8860B;   /* navbar color DarkGoldenRod*/
+  height: 60px;                /* height of navbar */
+}
+
+.Main-NavBar li {
+  margin: 0 10%;              /* space between items */
+}
+
+.Main-NavBar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+
+.Main-NavBar a:hover {
+  color: #ffde59;              /* hover color */
+}
+
+/* Optional: fix it at the top of the screen 
+nav { need to wrap div in the if you use it
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}*/
+
+/* End of navigation bar*/
+
+/* Start of team page design */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    /*background: #f5f5f5;*/
+  }
+
+.team-member {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 220px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.team-member h2 {
+  font-size: 1.2em;
+  margin-bottom: 6px;
+}
+
+.team-member p {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.team-member a {
+  display: inline-block;
+  color: #0077b5;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.team-member a:hover {
+  color: #005582;
+}
+/* End of team page design */
+
+/* Start of Information page desgin */
+.information-container {
+  display: flex;
+  flex-direction: column; /* stack cards vertically */
+  align-items: center;    /* center them horizontally */
+  gap: 40px;              /* space between each card */
+}
+
+.resource-card {
+  text-align: center;     /* center text inside each card */
+}
+
+
+details {
+  border: 1px solid #cccfff;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f8f8f8;
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: black;
+}
+
+/* This is where the arrow is created */
+summary::before {
+  content: "▸";
+  font-size: 1.2em;
+  margin-right: 8px;
+  transition: transform 0.2s ease;
+  color: #B8860B;
+}
+
+/* This is how the arrow can rotate */
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+summary:hover {
+  color: #B8860B;
+}
+
+/* end of Information page desgin */
