@@ -243,3 +243,10 @@ summary:hover {
 }
 
 /* end of Information page desgin */
+
+/* footer */
+.footer {
+  background-color: #B8860B; /* slightly darker */
+  color: #FFFFFF;
+  border-top: 1px solid rgba(0,0,0,0.15); /* subtle divider */
+}
