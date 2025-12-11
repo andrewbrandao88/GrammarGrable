@@ -1,7 +1,7 @@
+/* CSS Styling sheet */
 body {
   background-color: #FAEBD7;
 }
-
 
 h1, h2, h3{
   text-align: center;
@@ -72,21 +72,13 @@ h1, h2, h3{
 .Main-NavBar a:hover {
   color: #ffde59;              /* hover color */
 }
-
-/* Optional: fix it at the top of the screen 
-nav { need to wrap div in the if you use it
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}*/
-
 /* End of navigation bar*/
 
 /* Start of Hero section */
+/* Hero section in Home tab */
 .hero {
   height: 90vh;
-  background-image: url("backgrounds/potential_2.jpg");
+  background-image: url("graphics_and_backgrounds/Home_Graphic.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -101,10 +93,11 @@ nav { need to wrap div in the if you use it
   border-radius: 30px;
   overflow: hidden;   /* <-- THIS fixes the corner bleed */
 }
+/* End of Home tab hero section*/
 
 .hero-2 { /* for downloads page */
   height: 90vh;
-  background-image: url("backgrounds/Screenshot_1_edit.PNG");
+  background-image: url("graphics_and_backgrounds/Download_Graphic.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -124,6 +117,7 @@ nav { need to wrap div in the if you use it
   background: rgba(0, 0, 0, 0.30); /* this is what creates the dark affect */
   z-index: 0;
 }
+/* end of download hero section*/
 
 .hero::before {
   content: "";
@@ -169,7 +163,7 @@ nav { need to wrap div in the if you use it
 }
 
 .team-member:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /* this makes the card pop up a little */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -217,7 +211,6 @@ nav { need to wrap div in the if you use it
   text-align: center;     /* center text inside each card */
 }
 
-
 details {
   border: 1px solid #cccfff;
   border-radius: 8px;
@@ -236,7 +229,7 @@ summary {
 
 /* This is where the arrow is created */
 summary::before {
-  content: "▸";
+  content: "▸"; /* Unicode Character “▸” (U+25B8) got it from https://www.compart.com/en/unicode/U+25B8 */
   font-size: 1.2em;
   margin-right: 8px;
   transition: transform 0.2s ease;
@@ -251,12 +244,11 @@ details[open] summary::before {
 summary:hover {
   color: #B8860B;
 }
-
 /* end of Information page desgin */
 
 /* footer */
 .footer {
   background-color: #B8860B; /* slightly darker */
   color: #FFFFFF;
-  border-top: 1px solid rgba(0,0,0,0.15); /* subtle divider */
+  border-top: 1px solid rgba(0,0,0,0.15); /* creates a subtle divider */
 }
